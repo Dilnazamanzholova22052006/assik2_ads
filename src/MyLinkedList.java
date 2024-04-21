@@ -300,5 +300,5 @@ import java.util.NoSuchElementException;
                     if (object.equals(current.value)) {
                         return true;
                     }
-                    current
+                    current;
 }
