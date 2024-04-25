@@ -1,5 +1,4 @@
 import java.util.NoSuchElementException;
-public class MyStack {
     public class CustomStack<T extends Comparable<T>> {
         private MyDoublyLinkedList<T> customList = new MyDoublyLinkedList<T>();
 
@@ -17,7 +16,7 @@ public class MyStack {
         }
 
         // Get the size of the stack
-        public int getSize() {
+        public int size() {
             return customList.size();
         }
 
@@ -37,4 +36,3 @@ public class MyStack {
         }
     }
 
-}

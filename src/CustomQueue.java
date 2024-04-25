@@ -1,6 +1,5 @@
 import java.util.NoSuchElementException;
-public class CustomQueue {
-    public class MyQueue<T extends Comparable<T>> {
+    public class CustomQueue<T extends Comparable<T>> {
         private final MyDoublyLinkedList<T> list = new MyDoublyLinkedList<T>(); // Use MyLinkedList to handle the elements
 
         // Enqueue an element at the end of the queue
@@ -36,4 +35,3 @@ public class CustomQueue {
             return list.size();
         }
     }
-}

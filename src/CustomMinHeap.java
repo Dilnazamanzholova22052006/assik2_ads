@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
             this.customHeap = new MyArrayList<>();
         }
 
-        public void insert(T item) {
+        public void add(T item) {
             customHeap.add(item);  // Add at the end
             int index = customHeap.size() - 1;
             while (index > 0) {
@@ -19,7 +19,7 @@ import java.util.NoSuchElementException;
             }
         }
 
-        public T removeMin() {
+        public T extractMin() {
             if (customHeap.size() == 0) {
                 throw new NoSuchElementException("Heap is empty");
             }
@@ -33,7 +33,7 @@ import java.util.NoSuchElementException;
             return min;
         }
 
-        public T peekMin() {
+        public T peek() {
             if (customHeap.size() == 0) {
                 throw new NoSuchElementException("Heap is empty");
             }
@@ -62,7 +62,7 @@ import java.util.NoSuchElementException;
             customHeap.set(j, temp);
         }
 
-        public int getSize() {
+        public int size() {
             return customHeap.size();
         }
 
